@@ -9,12 +9,12 @@ if [[ "$ARCH" == "x86_64" ]]; then
 		echo "检测到架构: amd64 (x86_64)"
 		cd /usr/local/
 		rm -rf /usr/local/speedtest-go
-		wget -N --no-check-certificate https://raw.githubusercontent.com/DongfeiSay/Repository/main/speedtest-go.zip && unzip speedtest-go.zip && rm -rf speedtest-go.zip
+		wget -N --no-check-certificate https://raw.githubusercontent.com/DongfeiSay/Repository/main/speedtest-go.zip && unzip -q speedtest-go.zip && rm -rf speedtest-go.zip
 elif [[ "$ARCH" == "aarch64" ]]; then
 		echo "检测到架构: arm64 (aarch64)"
 		cd /usr/local/
 		rm -rf /usr/local/speedtest-go
-		wget -N --no-check-certificate https://raw.githubusercontent.com/DongfeiSay/Repository/main/arm64/speedtest-go.zip && unzip speedtest-go.zip && rm -rf speedtest-go.zip
+		wget -N --no-check-certificate https://raw.githubusercontent.com/DongfeiSay/Repository/main/arm64/speedtest-go.zip && unzip -q speedtest-go.zip && rm -rf speedtest-go.zip
 else
 		echo "未知架构: $ARCH，退出脚本"
 		exit 1
