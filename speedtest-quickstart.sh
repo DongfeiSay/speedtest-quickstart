@@ -16,7 +16,7 @@ elif [[ "$ARCH" == "aarch64" ]]; then
 		rm -rf /usr/local/speedtest-go
 		wget -N --no-check-certificate https://raw.githubusercontent.com/DongfeiSay/Repository/main/arm64/speedtest-go.zip && unzip speedtest-go.zip && rm -rf speedtest-go.zip
 else
-		echo "未知架构: $ARCH，退出脚本
+		echo "未知架构: $ARCH，退出脚本"
 		exit 1
 fi
 
