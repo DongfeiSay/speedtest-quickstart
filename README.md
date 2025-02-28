@@ -2,7 +2,7 @@
 
 [LibreSpeed](https://github.com/librespeed/speedtest-go) 的快速搭建脚本，无依赖。
 
-目标平台：`amd64` `aarch64`
+目标平台：`x86_64` `aarch64`
 
 ## 用法
 
